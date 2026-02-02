@@ -17,6 +17,13 @@ jobs:
 
       - name: Test pwd
         run: pwd
+
+      - name: cd Testing
+        run: cd Testing
+
+      - name: if no dir make
+        if: failure()
+        run: mkdir Testing
   
   install:
     runs-on: ubuntu-latest
