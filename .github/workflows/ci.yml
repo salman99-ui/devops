@@ -1,0 +1,26 @@
+name : CI Pipeline
+on:
+  push:
+    branches:
+      - main
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        run: echo "Setting up Node.js environment"
+  
+  install:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: echo "Installing project dependencies"
