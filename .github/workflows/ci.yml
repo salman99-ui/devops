@@ -14,6 +14,9 @@ jobs:
 
       - name: Set up Node.js
         run: echo "Setting up Node.js environment"
+
+      - name: Test pwd
+        run: echo pwd
   
   install:
     runs-on: ubuntu-latest
