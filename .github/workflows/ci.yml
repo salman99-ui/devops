@@ -18,10 +18,6 @@ jobs:
       - name: Test pwd
         run: pwd
 
-      - name: cd Testing
-        run: cd Testing
-        continue-on-error: true
-
       - name: if no dir make
         if: failure()
         run: mkdir Testing
