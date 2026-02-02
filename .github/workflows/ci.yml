@@ -20,6 +20,7 @@ jobs:
 
       - name: cd Testing
         run: cd Testing
+        continue-on-error: true
 
       - name: if no dir make
         if: failure()
